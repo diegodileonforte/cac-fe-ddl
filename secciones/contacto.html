@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="../styles/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <title>Hinode Store</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png"/>
+</head>
+
+<body class="contacto__grid main-bg">
+    <header>
+        <!--Logo-Header-->
+        <div class="logo__contenedor">
+            <a href="/index.html"><img class="header__logo-img" src="../images/logo.png" alt="Hinode logo"></a>
+        </div>
+
+        <!--Barra de navegación-->
+        <nav id="navbar">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="formulario">
+        <h2 class="formulario__titulo">Hacenos tu pedido o consulta</h2>
+        <form action="/action_page.php">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Juan" required />
+
+            <label for="lastname">Apellido</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Pérez" required />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required />  
+
+            <input type="checkbox" name="accept" value="1"/>
+            <label for="checkbox">Deseo recibir novedades</label>
+
+            <textarea name="comment" id="comment" cols="50" rows="8" placeholder="Mensaje" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <section id="ubicacion">
+        <h2 class="ubicacion__titulo">Visitanos en nuestro local</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6437173517816!2d-58.43544428505284!3d-34.587880564166795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58948c9fe89%3A0xf0851a35b5c7d1c!2sGorriti%205215%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1635111087723!5m2!1ses-419!2sar"
+            width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <footer>
+        <!--Contacto-Footer-->
+        <div class="footer__contacto">
+            <h3>Contacto y ubicación</h3>
+            <div class="whatsapp-footer">
+                <i class="fab fa-whatsapp"></i>
+                <p>+54 9 1135467980</p>
+            </div>
+            <div>
+                <i class="far fa-envelope"></i>
+                <a href="mailto:japoarstore@gmail.com">japoarstore@gmail.com</a>
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="https://goo.gl/maps/XTqeTmpK1WH57Pof9" target="/blank">Gorriti 5215, C.A.B.A</a>
+            </div>
+        </div>
+        <!--Redes sociales-Footer-->
+        <div class="footer__redes">
+            <h3>Nuestras redes</h3>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com" target="_blank"><i
+                            class="fab fa-2x fa-instagram-square"></i></a></li>
+            </ul>
+            <p class="footer__copyright">Copyright © 2021. Japoar S.A.S.</p>
+        </div>
+        <!--Ayuda-Footer-->
+        <div class="footer__ayuda">
+            <h3>Ayuda</h3>
+            <a href="">Preguntas frecuentes</a>
+            <a href="./contacto.html">Contactanos</a>
+        </div>
+    </footer>
+</body>
+
+</html>
