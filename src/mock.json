@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Mochi x8",
+        "category": "snack",
+        "price": 450,
+        "thumbnail": "https://i.postimg.cc/Qx8JJ5Zz/mochi.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Remune Soda",
+        "category": "snack",
+        "price": 150,
+        "thumbnail": "https://i.postimg.cc/sxy98GQv/remune.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Tamagotchi",
+        "category": "gadget",
+        "price": 6500,
+        "thumbnail": "https://i.postimg.cc/dQm9C6pd/tamagotchi.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Chop sticks Set x2",
+        "category": "gadget",
+        "price": 2500,
+        "thumbnail": "https://i.postimg.cc/pLdkRj0j/chop.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Demon Slayer - 01",
+        "category": "mya",
+        "price": 600,
+        "thumbnail": "https://i.postimg.cc/R06RnBxV/ds01.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Fullmetal Alchemist - 01",
+        "category": "mya",
+        "price": 600,
+        "thumbnail": "https://i.postimg.cc/13YBtzTj/fma01.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Gameboy Color + Pokemon Yellow",
+        "category": "gaming",
+        "price": 30000,
+        "thumbnail": "https://i.postimg.cc/k4Wvfv50/gbc.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Gameboy Advace",
+        "category": "gaming",
+        "price": 35000,
+        "thumbnail": "https://i.postimg.cc/mrvSY5T3/gba.jpg"
+    }
+]

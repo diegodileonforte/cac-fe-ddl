@@ -261,7 +261,7 @@ footer a:hover {
     margin: 0 0 0 5rem;
 }
 
-#formulario h2{
+#formulario h2 {
     font-size: 2rem;
 }
 
@@ -322,4 +322,60 @@ footer a:hover {
 #ubicacion h2 {
     font-size: 2rem;
     padding-bottom: 1rem;
+}
+
+/* PRODUCTOS */
+
+#products-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#items {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 25%;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+#productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#productPrice {
+    text-align: center;
+}
+
+#productPrice {
+    margin: 5px;
+}
+
+#card-btn {
+    font-size: 1rem;
+    margin: 5px;
+    font-weight: bolder;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #888;
 }

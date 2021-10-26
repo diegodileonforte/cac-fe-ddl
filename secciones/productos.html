@@ -31,8 +31,21 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>Productos</h1>
+    <section id="products-container">
+        <h1 style="text-align: center;">Productos</h1>
+        <div style="max-width: 80%;" id="items"></div>
+
+        <template id="template-card">
+            <div class="card">
+                <img id="productThumbnail" src="" alt="">
+                <div id="productInfo">
+                    <h3 id="productTitle">Titulo</h5>
+                        <p id="productPrice"></p>
+                        <button id="card-btn">Agregar al carrito</button>
+                </div>
+            </div>
+            </div>
+        </template>
     </section>
     <footer>
         <!--Contacto-Footer-->
@@ -69,6 +82,8 @@
             <a href="./contacto.html">Contactanos</a>
         </div>
     </footer>
+
+    <script type="module" src="../src/app.js"></script>
 </body>
 
 </html>
