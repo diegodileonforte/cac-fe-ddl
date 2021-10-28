@@ -41,6 +41,12 @@ header {
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+}
+
 .header__logo-img {
     padding: 0.5rem;
     height: 144px;
@@ -49,6 +55,7 @@ header {
 
 #navbar {
     padding: 1rem;
+    max-width: 100%;
 }
 
 #navbar ul {
@@ -58,7 +65,7 @@ header {
 }
 
 #navbar li {
-    padding: 1rem;
+    margin: 1rem;
     list-style-type: none;
 }
 
@@ -91,9 +98,21 @@ footer {
     border-top: solid var(--negro) 2px;
 }
 
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
 footer h3 {
     font-size: 1.2rem;
     padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    footer h3 {
+        padding: 0.8rem;
+    }
 }
 
 footer a {
@@ -107,6 +126,12 @@ footer a:hover {
 
 .footer__contacto div {
     padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__contacto {
+        order: 2;
+    }
 }
 
 .footer__contacto p {
@@ -130,9 +155,21 @@ footer a:hover {
     margin: 0.6rem;
 }
 
+@media screen and (max-width: 768px) {
+    .footer__copyright {
+        display: none;
+    }
+}
+
 .footer__ayuda a {
     display: block;
     padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__ayuda {
+        order: 2;
+    }
 }
 
 /* INDEX */
@@ -165,6 +202,15 @@ footer a:hover {
     color: var(--negro);
     font-size: 3rem;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #main__titulo-contenedor h1 {
+        font-size: 3rem;
+    }
+    #main__titulo-contenedor p {
+        font-size: 2rem;
+    }
 }
 
 /* Links a productos */
@@ -246,6 +292,19 @@ footer a:hover {
     grid-template-columns: 50% 50%;
 }
 
+@media screen and (max-width: 768px) {
+    .contacto__grid {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "formulario"
+            "ubicacion"
+            "footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 100%;
+    }
+}
+
 #formulario {
     grid-area: formulario;
 }
@@ -254,11 +313,24 @@ footer a:hover {
     grid-area: ubicacion;
 }
 
+@media screen and (max-width: 768px) {
+    #ubicacion {
+        display: none !important;
+    }
+}
+
 /* Formulario */
 
 #formulario {
     padding: 1rem;
     margin: 0 0 0 5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    #formulario {
+        margin: 0;
+    }
 }
 
 #formulario h2 {
@@ -280,11 +352,14 @@ footer a:hover {
     box-sizing: border-box;
 }
 
-#formulario input[type=checkbox] {
-    display: inline-block;
-    border: 1px solid #888;
-    border-radius: 4px;
-    box-sizing: border-box;
+@media screen and (max-width: 768px) {
+
+    #formulario input[type=text],
+    [type=email] {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+    }
 }
 
 #formulario input[type=submit] {
@@ -300,6 +375,17 @@ footer a:hover {
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+
+    #formulario input[type=submit] {
+        background-color: var(--blanco);
+        color: var(--rojo);
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+    }
+}
+
 #formulario input[type=submit]:hover {
     transform: scale(1.1);
     transition: all 0.2s linear;
@@ -309,6 +395,14 @@ footer a:hover {
     display: block;
     width: 80%;
     resize: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    #formulario textarea {
+        margin: 1rem 0 1rem 0;
+        width: 100%;
+    }
 }
 
 #ubicacion {
@@ -341,7 +435,7 @@ footer a:hover {
 }
 
 .card {
-    max-width: 25%;
+    max-width: auto;
     padding: 1rem;
     margin: 1rem;
     background-color: white;
@@ -350,8 +444,22 @@ footer a:hover {
 }
 
 .card img {
-    max-width: 100%;
-    height: auto;
+    width: 400px;
+    height: 400px;
+}
+
+@media screen and (max-width: 768px){
+    .card img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .card img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 #productInfo {

@@ -33,7 +33,7 @@
     </header>
     <section id="formulario">
         <h2 class="formulario__titulo">Hacenos tu pedido o consulta</h2>
-        <form action="/action_page.php">
+        <form id="form" action="/action_page.php">
             <label for="name">Nombre</label>
             <input type="text" id="name" name="name" placeholder="Juan" required />
 
@@ -41,10 +41,7 @@
             <input type="text" id="lastname" name="lastname" placeholder="Pérez" required />
 
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required />  
-
-            <input type="checkbox" name="accept" value="1"/>
-            <label for="checkbox">Deseo recibir novedades</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required />
 
             <textarea name="comment" id="comment" cols="50" rows="8" placeholder="Mensaje" required></textarea>
 
@@ -83,7 +80,7 @@
                 <li><a href="https://www.instagram.com" target="_blank"><i
                             class="fab fa-2x fa-instagram-square"></i></a></li>
             </ul>
-            <p class="footer__copyright">Copyright © 2021. Japoar S.A.S.</p>
+            <p class="footer__copyright">Copyright © 2021. Hinode S.A.S.</p>
         </div>
         <!--Ayuda-Footer-->
         <div class="footer__ayuda">
@@ -92,6 +89,7 @@
             <a href="./contacto.html">Contactanos</a>
         </div>
     </footer>
+    <script src="../src/validation.js"></script>
 </body>
 
 </html>
