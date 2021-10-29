@@ -427,6 +427,11 @@ footer a:hover {
     align-items: center;
 }
 
+#products-container h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
 #items {
     display: flex;
     justify-content: center;

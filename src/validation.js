@@ -6,15 +6,15 @@ const lastname = document.getElementById('lastname').value
 const email = document.getElementById('email').value
 const comment = document.getElementById('comment').value
 
-const errorMsg = []
-
 form.addEventListener('submit', (e) => {
 
-    if (firstname.value === '' || firstname.value == null) {
+    const errorMsg = []
+
+    if (firstname.value === '') {
         errorMsg.push('Ingresa tu nombre')
     }
 
-    if (lastname.value === '' || lastname.value == null) {
+    if (lastname.value === '') {
         errorMsg.push('Ingresa tu apellido')
     }
 
@@ -26,7 +26,7 @@ form.addEventListener('submit', (e) => {
         }
     })
 
-    if (comment.value === '' || comment.value == null) {
+    if (comment.value === '') {
         errorMsg.push('Ingresa una consulta o mensaje')
     }
 
